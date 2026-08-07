@@ -39,26 +39,29 @@ main{
     background:white;
     padding:30px;
     box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+}
+
+img{
+    width:80px;
+    height:80px;
+    border:2px solid #777;
+    border-radius:5px;
+    object-fit:cover;
 }
 
 h2{
+    margin-top:0;
     border-left:6px solid #666;
     padding-left:10px;
     color:#444;
 }
 
-img{
-    display:block;
-    width:500px;
-    max-width:100%;
-    height:auto;
-    margin:20px auto;
-    border:2px solid #777;
-    border-radius:5px;
-}
-
-section{
-    margin-bottom:30px;
+.artigo-autor{
+    font-weight:bold;
 }
 
 p{
@@ -68,6 +71,10 @@ p{
 
 ul{
     line-height:1.8;
+}
+
+section{
+    width:100%;
 }
 
 footer{
@@ -85,111 +92,91 @@ footer{
 <body>
 
 <header>
-
-<h1>RELATÓRIO BOTÂNICO</h1>
-
-<p>Blog Informativo sobre a Natureza</p>
-
+    <h1>RELATÓRIO BOTÂNICO</h1>
+    <p>Blog Informativo sobre a Natureza e histórias.</p>
 </header>
 
 <main>
 
-<section>
+    <img src="tulipa.jpeg" alt="Imagem de uma Tulipa">
 
-<h2>Introdução</h2>
+    <div>
 
-<p>
-As tulipas são flores conhecidas mundialmente por sua elegância, diversidade de cores e importância histórica.
-Pertencentes à família das Liliáceas, elas são cultivadas principalmente como plantas ornamentais e representam
-beleza, renovação e delicadeza. Atualmente são encontradas em jardins, parques e eventos florais em diversos países.
-</p>
+        <h2>Introdução</h2>
 
-</section>
+        <p class="artigo-autor">Por: Ana Flavia.</p>
 
-<img src="tulipa.jpeg" alt="Imagem de uma Tulipa">
+        <p>
+            As tulipas são flores conhecidas mundialmente por sua elegância,
+            diversidade de cores e importância histórica. Pertencentes à família
+            das Liliáceas, elas são cultivadas principalmente como plantas
+            ornamentais e representam beleza, renovação e delicadeza.
+        </p>
 
-<section>
-
-<h2>Origem das Tulipas</h2>
-
-<p>
-As tulipas surgiram na Ásia Central e posteriormente foram levadas para a Europa.
-Foi na Holanda que elas ganharam destaque mundial, tornando-se símbolo nacional.
-Durante o século XVII ocorreu a chamada <strong>Tulipomania</strong>, quando os bulbos das flores
-atingiram valores extremamente altos, marcando um dos primeiros casos de especulação econômica da história.
-</p>
-
-</section>
-
-<section>
-
-<h2>Características</h2>
-
-<ul>
-<li>Crescem a partir de bulbos subterrâneos.</li>
-<li>Possuem uma haste reta e resistente.</li>
-<li>Apresentam apenas uma flor por haste.</li>
-<li>Existem em diversas cores, como vermelho, amarelo, branco, rosa, roxo e laranja.</li>
-<li>Suas pétalas possuem formato semelhante a uma taça.</li>
-<li>Florescem principalmente durante a primavera.</li>
-</ul>
-
-</section>
-
-<section>
-
-<h2>Estrutura da Planta</h2>
-
-<p>
-O bulbo funciona como uma reserva de nutrientes, permitindo que a planta sobreviva durante períodos frios.
-As folhas possuem formato alongado e coloração verde-azulada.
-A haste cresce em direção à luz, sustentando uma flor de pétalas macias e coloridas.
-</p>
-
-</section>
-
-<section>
-
-<h2>Cultivo e Cuidados</h2>
-
-<p>
-Para um bom desenvolvimento, as tulipas necessitam de clima frio, solo fértil, boa drenagem e iluminação adequada.
-O excesso de água pode prejudicar os bulbos, por isso a irrigação deve ser moderada.
-Em regiões muito quentes, é comum refrigerar os bulbos antes do plantio para simular o inverno.
-</p>
-
-</section>
-
-<section>
-
-<h2>Curiosidades</h2>
-
-<p>
-Além de sua beleza, as tulipas possuem diferentes significados conforme a cor de suas flores.
-As vermelhas representam o amor verdadeiro, as amarelas simbolizam alegria,
-as brancas transmitem paz e as roxas estão associadas à nobreza.
-Todos os anos milhões de turistas visitam os famosos campos de tulipas na Holanda durante a primavera.
-</p>
-
-</section>
-
-<section>
-
-<h2>Conclusão</h2>
-
-<p>
-As tulipas são flores de grande importância para a botânica, para a jardinagem e para a cultura de diversos países.
-Sua beleza, aliada à sua história e aos cuidados específicos de cultivo, faz delas uma das espécies ornamentais mais admiradas do mundo.
-Conhecer suas características ajuda a compreender melhor a diversidade existente no reino vegetal.
-</p>
-
-</section>
+    </div>
 
 </main>
 
+<section style="width:85%; max-width:1000px; margin:0 auto 30px; background:white; padding:30px; box-shadow:0px 0px 10px rgba(0,0,0,0.2);">
+
+    <h2>Origem das Tulipas</h2>
+
+    <p>
+        As tulipas surgiram na Ásia Central e posteriormente foram levadas para a
+        Europa. Foi na Holanda que elas ganharam destaque mundial, tornando-se
+        símbolo nacional. Durante o século XVII ocorreu a chamada
+        <strong>Tulipomania</strong>, quando os bulbos das flores atingiram
+        valores extremamente altos.
+    </p>
+
+    <h2>Características</h2>
+
+    <ul>
+        <li>Crescem a partir de bulbos subterrâneos.</li>
+        <li>Possuem uma haste reta e resistente.</li>
+        <li>Apresentam apenas uma flor por haste.</li>
+        <li>Existem em diversas cores.</li>
+        <li>Florescem principalmente durante a primavera.</li>
+    </ul>
+
+    <h2>Estrutura da Planta</h2>
+
+    <p>
+        O bulbo funciona como uma reserva de nutrientes, permitindo que a planta
+        sobreviva durante períodos frios. As folhas possuem formato alongado e a
+        haste sustenta uma flor colorida.
+    </p>
+
+    <h2>Cultivo e Cuidados</h2>
+
+    <p>
+        Para um bom desenvolvimento, as tulipas necessitam de clima frio, solo
+        fértil, boa drenagem e iluminação adequada. O excesso de água pode
+        prejudicar os bulbos.
+    </p>
+
+    <h2>Curiosidades</h2>
+
+    <p>
+        As tulipas possuem diferentes significados conforme a cor de suas flores.
+        As vermelhas representam o amor verdadeiro, as amarelas simbolizam
+        alegria, as brancas transmitem paz e as roxas estão associadas à
+        nobreza.
+    </p>
+
+    <h2>Conclusão</h2>
+
+    <p>
+        As tulipas são flores de grande importância para a botânica, para a
+        jardinagem e para a cultura de diversos países. Conhecer suas
+        características ajuda a compreender melhor a diversidade do reino
+        vegetal.
+    </p>
+
+</section>
+
 <footer>
-
-
+    
 </footer>
 
 </body>
