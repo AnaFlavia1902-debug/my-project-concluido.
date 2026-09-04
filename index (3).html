@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BLOG DE HISTÓRIAS E BOTÂNICA</title>
+
+<style>
+
+body{
+    font-family: Georgia, serif;
+    background:#f2f2f2;
+    margin:0;
+    color:#333;
+}
+
+header{
+    background:#4a4a4a;
+    color:white;
+    text-align:center;
+    padding:25px;
+    border-bottom:5px solid #999;
+}
+
+header h1{
+    margin:0;
+    font-size:36px;
+}
+
+header p{
+    margin-top:8px;
+    font-size:18px;
+}
+
+main{
+    width:85%;
+    max-width:1000px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+}
+
+img{
+    width:80px;
+    height:80px;
+    border:2px solid #777;
+    border-radius:5px;
+    object-fit:cover;
+}
+
+h2{
+    margin-top:0;
+    border-left:6px solid #666;
+    padding-left:10px;
+    color:#444;
+}
+
+.artigo-autor{
+    font-weight:bold;
+}
+
+p{
+    text-align:justify;
+    line-height:1.8;
+}
+
+ul{
+    line-height:1.8;
+}
+
+section{
+    width:85%;
+    max-width:1000px;
+    margin:0 auto 30px;
+    background:white;
+    padding:30px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+
+/* ÁREA DOS BOTÕES */
+
+.reacoes{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+/* BOTÕES */
+
+.bolha{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 18px;
+    border:none;
+    border-radius:25px;
+    background:#eeeeee;
+    cursor:pointer;
+    font-size:20px;
+    transition:0.2s;
+}
+
+.bolha:hover{
+    transform:scale(1.08);
+    background:#dddddd;
+}
+
+.bolha:active{
+    transform:scale(0.95);
+}
+
+/* NÚMERO DAS REAÇÕES */
+
+.bolha span{
+    font-size:17px;
+    font-weight:bold;
+    color:#555;
+}
+
+footer{
+    background:#4a4a4a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>RELATÓRIO BOTÂNICO</h1>
+
+    <p>Blog Informativo sobre a Natureza</p>
+
+</header>
+
+
+<main>
+
+    <img src="tulipa2.jpg" alt="Imagem de uma Tulipa">
+
+    <div>
+
+        <h2>Introdução</h2>
+
+        <p class="artigo-autor">
+            Por: Ana Flavia.
+        </p>
+
+        <p>
+            As tulipas são flores conhecidas mundialmente por sua elegância,
+            diversidade de cores e importância histórica. Pertencentes à família
+            das Liliáceas, elas são cultivadas principalmente como plantas
+            ornamentais e representam beleza, renovação e delicadeza.
+        </p>
+
+
+        <!-- BOTÕES DE REAÇÃO -->
+
+        <div class="reacoes">
+
+            <button class="bolha" id="curtir">
+                ❤️ <span>0</span>
+            </button>
+
+            <button class="bolha" id="raiva">
+                😡 <span>0</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<section>
+
+    <h2>Origem das Tulipas</h2>
+
+    <p>
+        As tulipas surgiram na Ásia Central e posteriormente foram levadas para a
+        Europa. Foi na Holanda que elas ganharam destaque mundial, tornando-se
+        símbolo nacional. Durante o século XVII ocorreu a chamada
+        <strong>Tulipomania</strong>, quando os bulbos das flores atingiram
+        valores extremamente altos.
+    </p>
+
+
+    <h2>Características</h2>
+
+    <ul>
+
+        <li>Crescem a partir de bulbos subterrâneos.</li>
+
+        <li>Possuem uma haste reta e resistente.</li>
+
+        <li>Apresentam apenas uma flor por haste.</li>
+
+        <li>Existem em diversas cores.</li>
+
+        <li>Florescem principalmente durante a primavera.</li>
+
+    </ul>
+
+
+    <h2>Estrutura da Planta</h2>
+
+    <p>
+        O bulbo funciona como uma reserva de nutrientes, permitindo que a planta
+        sobreviva durante períodos frios. As folhas possuem formato alongado e a
+        haste sustenta uma flor colorida.
+    </p>
+
+
+    <h2>Cultivo e Cuidados</h2>
+
+    <p>
+        Para um bom desenvolvimento, as tulipas necessitam de clima frio, solo
+        fértil, boa drenagem e iluminação adequada. O excesso de água pode
+        prejudicar os bulbos.
+    </p>
+
+
+    <h2>Curiosidades</h2>
+
+    <p>
+        As tulipas possuem diferentes significados conforme a cor de suas flores.
+        As vermelhas representam o amor verdadeiro, as amarelas simbolizam
+        alegria, as brancas transmitem paz e as roxas estão associadas à
+        nobreza.
+    </p>
+
+
+    <h2>Conclusão</h2>
+
+    <p>
+        As tulipas são flores de grande importância para a botânica, para a
+        jardinagem e para a cultura de diversos países. Conhecer suas
+        características ajuda a compreender melhor a diversidade do reino
+        vegetal.
+    </p>
+
+</section>
+
+
+<footer>
+
+</footer>
+
+
+<script>
+
+/* BOTÕES */
+
+const botaoCurtir = document.querySelector("#curtir");
+
+const botaoRaiva = document.querySelector("#raiva");
+
+
+/* CONTADORES */
+
+let curtidas = 0;
+
+let raivas = 0;
+
+
+/* BOTÃO CURTIR */
+
+botaoCurtir.addEventListener("click", function(){
+
+    curtidas++;
+
+    botaoCurtir.querySelector("span").textContent = curtidas;
+
+});
+
+
+/* BOTÃO RAIVA */
+
+botaoRaiva.addEventListener("click", function(){
+
+    raivas++;
+
+    botaoRaiva.querySelector("span").textContent = raivas;
+
+});
+
+</script>
+
+</body>
+
+</html>
